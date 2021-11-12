@@ -5,7 +5,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 
 class ShoppingPage extends StatelessWidget {
-  final shpppingController = Get.put(ShoppingController());
+  final shoppingController = Get.put(ShoppingController());
 
   ShoppingPage({Key? key}) : super(key: key);
 
@@ -41,13 +41,13 @@ class ShoppingPage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               InkWell(
                                 onTap: () {
                                   ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
+                                      .showSnackBar(const SnackBar(
                                     content: Text(
                                       "Added",
                                       textAlign: TextAlign.center,
@@ -57,7 +57,7 @@ class ShoppingPage extends StatelessWidget {
                                 child: Container(
                                   padding: EdgeInsets.all(8),
                                   color: Colors.blue,
-                                  child: Text(
+                                  child: const Text(
                                     "Add to basket",
                                     style: TextStyle(color: Colors.white),
                                   ),
